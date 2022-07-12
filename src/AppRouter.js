@@ -7,6 +7,8 @@ import CartPage from "./core/pages/CartPage";
 import { lazy, Suspense } from "react";
 
 const Account = lazy(() => import("./features/account/AccountRouter"));
+const Auth = lazy(() => import("./features/auth/AuthRouter"));
+const Admin = lazy(() => import("./features/admin/AdminRouter"));
 
 const AppRouter = () => {
    return (
@@ -22,6 +24,8 @@ const AppRouter = () => {
                </Route>
 
                <Route path="/cuenta/*" element={<Account />}></Route>
+               <Route path="/auth/*" element={<Auth />}></Route>
+               <Route path="/admin/*" element={<Admin />}></Route>
 
                <Route path="*" element={<Navigate to="inicio" replace />} />
             </Routes>
