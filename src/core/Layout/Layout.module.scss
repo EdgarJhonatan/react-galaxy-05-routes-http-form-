@@ -1,0 +1,35 @@
+$toolbarHeight: 64px;
+
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  header, footer {
+    height: $toolbarHeight;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+    background: lightgrey;
+  }
+
+  footer {
+   justify-content: space-around;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  main {
+    padding: 1rem;
+    height: calc(100vh - #{$toolbarHeight * 2});
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
