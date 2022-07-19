@@ -1,4 +1,4 @@
-import Http from "../../../common/http/fetch-http";
+import Http from "../../../common/http/index";
 
 const endpoint = "http://localhost:3001/products";
 
